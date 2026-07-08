@@ -313,9 +313,8 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   }
 }
 
-// ===== 自定义背景：纸张纹理（细颗粒 + 顺纹纤维），克制自然 =====
-// 关键点：噪点去色成灰阶（不是彩色麻点）、按小尺寸平铺（不是把一张噪点拉满整页）、
-// 低透明度。深色墨蓝下沿用同一套灰阶噪点，浅色格子会在深色上自然透出。
+// ===== 自定义背景：冷压卡纸/水彩纸质感（大尺度斑驳 + 细纸齿颗粒），两种模式共用 =====
+// 两层都去色成灰调、无方向；SVG 写死宽高 + 定死 background-size，避免平铺缝与跨浏览器尺寸不一致。
 :root {
   --global-bg-color: #f8f8f6;
 }
@@ -327,17 +326,8 @@ html[data-theme="dark"] {
 body {
   background-color: var(--global-bg-color);
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.09'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.009 0.32' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.06'/%3E%3C/svg%3E");
-  background-size:
-    180px 180px,
-    320px 320px;
-  background-attachment: fixed;
-}
-
-// 深色墨蓝上噪点更容易被吞，透明度略微提高即可，仍保持克制。
-html[data-theme="dark"] body {
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.12'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.009 0.32' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.09'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)' opacity='0.06'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='600' height='600' filter='url(%23m)' opacity='0.10'/%3E%3C/svg%3E");
+  background-size: 200px 200px, 600px 600px;
+  background-repeat: repeat;
 }
