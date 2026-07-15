@@ -313,11 +313,11 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   }
 }
 
-// ===== 自定义背景：transparenttextures 纸纹（已本地自托管，非外链）=====
-// 浅色用 cream-paper，深色用 black-paper；图案已下载到 /assets/img，避免依赖外部站点。
+// ===== 自定义背景：transparenttextures 纹理（已本地自托管，非外链）=====
+// 浅色用 blizzard，深色用 cartographer；图案已下载到 /assets/img，避免依赖外部站点。
 // 路径相对 /assets/css/main.css，故用 ../img/。
 :root {
-  --global-bg-color: #f5f5f5;
+  --global-bg-color: #ffffff;
 }
 
 html[data-theme="dark"] {
@@ -326,10 +326,10 @@ html[data-theme="dark"] {
 
 body {
   background-color: var(--global-bg-color);
-  background-image: url("../img/cream-paper.png");
+  background-image: url("../img/blizzard.png");
   background-repeat: repeat;
 }
 
 html[data-theme="dark"] body {
-  background-image: url("../img/black-paper.png");
+  background-image: url("../img/cartographer.png");
 }
