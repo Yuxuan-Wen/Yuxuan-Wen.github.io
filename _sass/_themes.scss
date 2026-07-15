@@ -313,40 +313,6 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   }
 }
 
-// Venue label (bib `abbr` field): a small italic grey box UNDER the thumbnail,
-// same width as the image, not overlapping it. Reorder via flex since al-folio
-// emits the badge before the <figure> in the DOM.
-.publications ol.bibliography li .col-sm-2.abbr {
-  display: flex;
-  flex-direction: column;
-}
-.publications ol.bibliography li .col-sm-2.abbr figure {
-  order: 1;
-  margin: 0;
-}
-.publications ol.bibliography li .col-sm-2.abbr abbr.badge,
-.publications ol.bibliography li .col-sm-2.abbr .badge {
-  order: 2; // place under the image
-  width: 100%; // match the thumbnail width
-  margin: 5px 0 0;
-  padding: 1px 4px;
-  font-size: 0.6rem;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: var(--global-text-color-light);
-  background-color: rgba(128, 128, 128, 0.12);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 3px;
-  box-shadow: none;
-}
-.publications ol.bibliography li .col-sm-2.abbr abbr.badge a,
-.publications ol.bibliography li .col-sm-2.abbr .badge a {
-  color: inherit;
-}
-
 // ===== 自定义背景：transparenttextures 纹理（已本地自托管，非外链）=====
 // 浅色用 blizzard，深色用 cartographer；图案已下载到 /assets/img，避免依赖外部站点。
 // 路径相对 /assets/css/main.css，故用 ../img/。
