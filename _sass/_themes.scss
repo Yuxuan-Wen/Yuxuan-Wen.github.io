@@ -313,6 +313,32 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   }
 }
 
+// Overlay the venue label (bib `abbr` field) on the top-left corner of the thumbnail.
+.publications ol.bibliography li .col-sm-2.abbr {
+  position: relative;
+}
+.publications ol.bibliography li .col-sm-2.abbr abbr.badge,
+.publications ol.bibliography li .col-sm-2.abbr .badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 2;
+  margin: 0;
+  padding: 2px 7px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background-color: var(--global-theme-color);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+.publications ol.bibliography li .col-sm-2.abbr abbr.badge a,
+.publications ol.bibliography li .col-sm-2.abbr .badge a {
+  color: #fff;
+}
+
 // ===== 自定义背景：transparenttextures 纹理（已本地自托管，非外链）=====
 // 浅色用 blizzard，深色用 cartographer；图案已下载到 /assets/img，避免依赖外部站点。
 // 路径相对 /assets/css/main.css，故用 ../img/。
