@@ -283,6 +283,24 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   color: #e8e8e8 !important;
 }
 
+// Social icons under the profile photo (replace the email/location text), centered,
+// same neutral color as the footer row, turning accent-blue on hover.
+.profile-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+.profile-social a,
+.profile-social a i::before {
+  color: var(--global-text-color) !important;
+}
+.profile-social a:hover,
+.profile-social a:hover i::before {
+  color: var(--global-theme-color) !important;
+}
+
 // Highlight my own name in the publication author lists with bold instead of italic.
 .publications ol.bibliography li .author em {
   font-style: normal;

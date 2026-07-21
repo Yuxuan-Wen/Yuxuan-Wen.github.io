@@ -9,8 +9,12 @@ profile:
   image: yw_prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>yuxuan.wen@duke.edu</p>
-    <p>Durham, NC, USA</p>
+    <div class="profile-social">
+    <a href="mailto:yuxuan.wen@duke.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/Yuxuan-Wen" title="GitHub" target="_blank" rel="external nofollow noopener"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/yuxuan-wen-b87977261" title="LinkedIn" target="_blank" rel="external nofollow noopener"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://scholar.google.com/citations?user=M9q_L8oAAAAJ" title="Google Scholar" target="_blank" rel="external nofollow noopener"><i class="ai ai-google-scholar"></i></a>
+    </div>
 
 selected_papers: false # full publication list is embedded below instead
 social: true # includes social icons at the bottom of the page
@@ -87,7 +91,7 @@ Feel free to reach me by [email](mailto:yuxuan.wen@duke.edu) or [LinkedIn](https
 <h2><a href="/news/" style="color: inherit">news</a></h2>
 {% include news.liquid %}
 
-## Publications
+## Selected Publications
 
 {% include bib_search.liquid %}
 
