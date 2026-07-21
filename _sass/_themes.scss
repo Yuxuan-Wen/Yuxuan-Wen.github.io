@@ -362,9 +362,10 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   margin-bottom: 1.1rem; // blank line below the icons, before the bio
 }
 
-// Shrink the footer social row (al-folio renders it very large by default).
+// Shrink the footer social row below the map (al-folio sets 4rem with an equally
+// specific selector that loads after ours, so !important is needed to win).
 .social .contact-icons {
-  font-size: 1.15rem;
+  font-size: 1.15rem !important;
 }
 
 // Highlight my own name in the publication author lists with bold instead of italic.
