@@ -319,9 +319,9 @@ html[data-theme="dark"] .social .contact-icons a i::before {
 .li-avatar {
   position: absolute;
   right: 1.6rem; // avatar on the right
-  bottom: -5rem; // half of the avatar sits below the banner
-  width: 10rem;
-  height: 10rem;
+  bottom: -5.75rem; // half of the avatar sits below the banner
+  width: 11.5rem;
+  height: 11.5rem;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid var(--global-bg-color);
@@ -330,8 +330,8 @@ html[data-theme="dark"] .social .contact-icons a i::before {
 }
 // reserve space on the right so the name/subtitle/icons never slide under the avatar
 .post-header {
-  min-height: 5.5rem;
-  padding-right: 12rem;
+  min-height: 6rem;
+  padding-right: 13.5rem;
 }
 @media (max-width: 575px) {
   .li-avatar {
@@ -359,6 +359,12 @@ html[data-theme="dark"] .social .contact-icons a i::before {
 .profile-social.li-social {
   justify-content: flex-start;
   margin-top: 0.7rem;
+  margin-bottom: 1.1rem; // blank line below the icons, before the bio
+}
+
+// Shrink the footer social row (al-folio renders it very large by default).
+.social .contact-icons {
+  font-size: 1.15rem;
 }
 
 // Highlight my own name in the publication author lists with bold instead of italic.
