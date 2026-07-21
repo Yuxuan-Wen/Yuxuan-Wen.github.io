@@ -26,6 +26,37 @@ latest_posts:
   enabled: false
 ---
 
+<!-- LinkedIn-style header: build a banner + overlapping circular avatar at the top of
+     the post by relocating al-folio's profile image. Runs early to avoid a layout flash. -->
+<script>
+  (function () {
+    var post = document.querySelector(".post");
+    var profile = document.querySelector(".profile");
+    var header = document.querySelector(".post-header");
+    if (!post || !profile || document.querySelector(".li-header")) return;
+    var img = profile.querySelector("img");
+    if (!img) return;
+    var social = profile.querySelector(".profile-social");
+
+    var li = document.createElement("div");
+    li.className = "li-header";
+    var banner = document.createElement("div");
+    banner.className = "li-banner";
+    var avatar = document.createElement("div");
+    avatar.className = "li-avatar";
+    avatar.appendChild(img); // move the existing profile photo into the avatar
+    li.appendChild(banner);
+    li.appendChild(avatar);
+    post.insertBefore(li, post.firstChild); // banner + avatar at the very top
+
+    if (social && header) {
+      social.classList.add("li-social"); // left-align the icons under the name
+      header.appendChild(social);
+    }
+    profile.style.display = "none"; // hide the now-empty right-aligned block
+  })();
+</script>
+
 <!-- Typewriter effect for the header: types the name first, then the subtitle, then
      removes the caret from both. Runs early (before the publications list paints) to
      avoid a flash of the fully-rendered text. -->
