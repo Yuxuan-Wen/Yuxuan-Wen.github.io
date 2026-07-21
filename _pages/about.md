@@ -132,5 +132,5 @@ Feel free to reach me by [email](mailto:yuxuan.wen@duke.edu) or [LinkedIn](https
 
 <!-- Visitor world map (MapMyVisitors). Only records visits on the live site. -->
 <div class="mapmyvisitors-widget" style="text-align: center; margin-top: 2rem;">
-  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&w=400&t=n&d=3rN61ber80qeVaChuc-YM5G0mQqSQPErALEyw17o7ag&co=a4aeb5&cmo=3acc3a&cmn=ff5353&ct=ffffff"></script>
+  <script type="text/javascript" id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=SsHQvy3PzHx7PYXboH9xkus6BNhgJcxFYZHWmpG2-14"></script>
 </div>
