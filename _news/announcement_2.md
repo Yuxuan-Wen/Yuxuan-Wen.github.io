@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper *"Bridging Task-specific and Task-interactive Features with Opportune Branching and Adaptive Attention for Object Detection"* was accepted at **IEEE Transactions on Neural Networks and Learning Systems (TNNLS)**.
+One paper got accepted by [TNNLS](https://doi.org/10.1109/TNNLS.2025.3562588).

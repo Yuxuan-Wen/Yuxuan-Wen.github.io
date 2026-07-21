@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper *"FlipNet: An Attention-enhanced Hierarchical Feature Flip Fusion Network for Lane Detection"* was published in **IEEE Transactions on Intelligent Transportation Systems (TITS)**. :tada:
+One paper got accepted by [T-ITS](https://doi.org/10.1109/TITS.2024.3380077).

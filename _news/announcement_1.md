@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my Ph.D. in Biomedical Engineering at **Duke University**.
+Started my Ph.D. at **Duke University**.
