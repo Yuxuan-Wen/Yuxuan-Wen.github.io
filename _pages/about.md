@@ -57,49 +57,35 @@ latest_posts:
   })();
 </script>
 
-<!-- Typewriter effect for the header: types the name first, then the subtitle, then
-     removes the caret from both. Runs early (before the publications list paints) to
-     avoid a flash of the fully-rendered text. -->
+<!-- Typewriter effect for the header: the NAME stays static; only the subtitle types
+     out (55ms/char) and keeps a blinking blue caret at the end. Runs early to avoid a
+     flash of the fully-rendered subtitle. -->
 <script>
   (function () {
-    var title = document.querySelector(".post-header .post-title");
     var desc = document.querySelector(".post-header .desc");
-    if (!title) return;
-    // Respect users who prefer reduced motion: leave the text as-is, no animation.
+    if (!desc) return;
+    // Respect users who prefer reduced motion: leave the subtitle as-is, no animation.
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    var titleText = title.textContent.replace(/\s+/g, " ").trim();
-    var descText = desc ? desc.textContent.replace(/\s+/g, " ").trim() : "";
-    // Blank both lines up front so neither flashes its final text before typing.
-    title.textContent = "";
-    if (desc) {
-      desc.style.minHeight = desc.offsetHeight + "px"; // reserve space, avoid layout jump
-      desc.textContent = "";
-    }
+    var descText = desc.textContent.replace(/\s+/g, " ").trim();
+    if (!descText) return;
+    desc.style.minHeight = desc.offsetHeight + "px"; // reserve space, avoid layout jump
+    desc.textContent = "";
 
-    function type(el, text, speed, keepCursor, done) {
-      var cursor = document.createElement("span");
-      cursor.className = "tw-cursor";
-      cursor.setAttribute("aria-hidden", "true");
-      cursor.textContent = "|";
-      el.appendChild(cursor);
-      var i = 0;
-      (function step() {
-        if (i < text.length) {
-          cursor.insertAdjacentText("beforebegin", text.charAt(i++));
-          setTimeout(step, speed);
-        } else {
-          if (!keepCursor) cursor.remove(); // drop the caret unless this is the final line
-          if (done) done();
-        }
-      })();
-    }
+    var cursor = document.createElement("span");
+    cursor.className = "tw-cursor";
+    cursor.setAttribute("aria-hidden", "true");
+    cursor.textContent = "|";
+    desc.appendChild(cursor);
 
-    // Name at 110ms/char (caret moves on when done); subtitle 2x faster (55ms) and
-    // keeps a blinking blue caret at the end.
-    type(title, titleText, 110, false, function () {
-      if (desc && descText) type(desc, descText, 55, true, null);
-    });
+    var i = 0;
+    (function step() {
+      if (i < descText.length) {
+        cursor.insertAdjacentText("beforebegin", descText.charAt(i++));
+        setTimeout(step, 55);
+      }
+      // leave the blinking caret at the end
+    })();
   })();
 </script>
 
