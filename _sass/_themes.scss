@@ -362,6 +362,13 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   margin-bottom: 1.1rem; // blank line below the icons, before the bio
 }
 
+// Tighten the vertical spacing between news rows (default cell padding is ~9.6px).
+.news .table td,
+.news .table th {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
 // Shrink the footer social row below the map (al-folio sets 4rem with an equally
 // specific selector that loads after ours, so !important is needed to win).
 .social .contact-icons {
