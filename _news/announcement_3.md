@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper got accepted by [T-ITS](https://doi.org/10.1109/TITS.2024.3380077).
+One paper got accepted by *[T-ITS](https://doi.org/10.1109/TITS.2024.3380077)*.
