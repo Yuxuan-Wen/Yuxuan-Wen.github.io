@@ -370,20 +370,20 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   padding-bottom: 0;
 }
 
-// Research Highlights: horizontal-scrolling row of image cards (see _pages/about.md).
+// Research Highlights: 3-column grid (6 projects -> 2 rows). See _pages/about.md.
 .research-highlights {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  overflow-x: auto;
-  overflow-y: hidden;
   padding: 0.4rem 0.2rem 1rem;
   margin-bottom: 1.5rem;
-  scroll-snap-type: x proximity;
-  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 575px) {
+  .research-highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .research-highlights .rh-card {
-  flex: 0 0 auto;
-  width: 15rem;
   display: flex;
   flex-direction: column;
   background: var(--global-card-bg-color);
@@ -391,7 +391,6 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  scroll-snap-align: start;
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;

@@ -91,9 +91,7 @@ latest_posts:
 
 I am a first-year Ph.D. student in [Biomedical Engineering](https://bme.duke.edu/) at Duke University, advised by [Prof. Timothy W. Dunn](https://www.tdunnlab.org/). My research focuses on AI/ML methods and foundation models.
 
-Before Duke, I completed a concurrent B.S./B.Eng. in Electrical Engineering at the University of Cincinnati and Chongqing University.
-
-During my undergraduate study, I was fortunate to conduct research at:
+Before Duke, I completed a concurrent B.S./B.Eng. in Electrical Engineering at the University of Cincinnati and Chongqing University. During my undergraduate study, I was fortunate to conduct research at:
 
 - [REHAssist](https://www.epfl.ch/labs/rehassist/) ([BioRob](https://www.epfl.ch/labs/biorob/)), EPFL — advised by [Dr. Mohamed Bouri](https://people.epfl.ch/mohamed.bouri)
 - [Center for Robotics Research](https://www.ceas.uc.edu/research/centers-labs/center-for-robotics-research.html), UC — advised by [Prof. Janet Dong](https://researchdirectory.uc.edu/p/dongjg)
@@ -133,8 +131,11 @@ Feel free to reach me by [email](mailto:yuxuan.wen@duke.edu) or [LinkedIn](https
   </div>
 </div>
 
+{% comment %} News hidden (remove this comment wrapper to show it again)
 <h2><a href="/news/" style="color: inherit">news</a></h2>
 {% include news.liquid %}
+{% endcomment %}
+
 
 ## Selected Publications
 
