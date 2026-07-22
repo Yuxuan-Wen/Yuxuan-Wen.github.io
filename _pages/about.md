@@ -112,8 +112,8 @@ Feel free to reach me by [email](mailto:yuxuan.wen@duke.edu) or [LinkedIn](https
     <div class="rh-caption">Autonomous Driving</div>
   </div>
   <div class="rh-card">
-    <div class="rh-media"><img src="{{ '/assets/img/research/rep_learning.png' | relative_url }}" alt="Representation Learning" loading="lazy" /></div>
-    <div class="rh-caption">Representation Learning</div>
+    <div class="rh-media"><img src="{{ '/assets/img/research/rep_learning.png' | relative_url }}" alt="Object Detection/Segmentation Representation Learning" loading="lazy" /></div>
+    <div class="rh-caption">Object Detection/Segmentation Representation Learning</div>
   </div>
   <div class="rh-card">
     <div class="rh-media"><img src="{{ '/assets/img/research/surgical_robotic.png' | relative_url }}" alt="Surgical Robotics and Medical Image Analysis" loading="lazy" /></div>
