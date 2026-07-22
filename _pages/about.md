@@ -105,6 +105,34 @@ During my undergraduate study, I was fortunate to conduct research at:
 
 Feel free to reach me by [email](mailto:yuxuan.wen@duke.edu) or [LinkedIn](https://www.linkedin.com/in/yuxuan-wen-b87977261/), and visit my [GitHub](https://github.com/Yuxuan-Wen).
 
+<h2>Research Highlights</h2>
+<div class="research-highlights">
+  <div class="rh-card">
+    <div class="rh-media"><img src="{{ '/assets/img/research/autonomous_driving.gif' | relative_url }}" alt="Autonomous Driving" loading="lazy" /></div>
+    <div class="rh-caption">Autonomous Driving</div>
+  </div>
+  <div class="rh-card">
+    <div class="rh-media"><img src="{{ '/assets/img/research/rep_learning.png' | relative_url }}" alt="Representation Learning" loading="lazy" /></div>
+    <div class="rh-caption">Representation Learning</div>
+  </div>
+  <div class="rh-card">
+    <div class="rh-media"><img src="{{ '/assets/img/research/surgical_robotic.png' | relative_url }}" alt="Surgical Robotics and Medical Image Analysis" loading="lazy" /></div>
+    <div class="rh-caption">Surgical Robotics &amp; Medical Image Analysis</div>
+  </div>
+  <div class="rh-card">
+    <div class="rh-media"><img src="{{ '/assets/img/research/docking.png' | relative_url }}" alt="ML for Drug Screening and Docking" loading="lazy" /></div>
+    <div class="rh-caption">ML for Drug Screening &amp; Docking</div>
+  </div>
+  <div class="rh-card">
+    <div class="rh-media"><img src="{{ '/assets/img/research/underwater_robotic.gif' | relative_url }}" alt="Underwater Robotics" loading="lazy" /></div>
+    <div class="rh-caption">Underwater Robotics</div>
+  </div>
+  <div class="rh-card">
+    <div class="rh-media"><img src="{{ '/assets/img/research/neural.png' | relative_url }}" alt="Neural Behavior Foundation Model" loading="lazy" /></div>
+    <div class="rh-caption">Neural Behavior Foundation Model</div>
+  </div>
+</div>
+
 <h2><a href="/news/" style="color: inherit">news</a></h2>
 {% include news.liquid %}
 
