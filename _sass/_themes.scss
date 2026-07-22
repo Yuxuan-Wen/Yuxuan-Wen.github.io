@@ -404,13 +404,13 @@ html[data-theme="dark"] .social .contact-icons a i::before {
   width: 100%;
   aspect-ratio: 3 / 2;
   overflow: hidden;
-  background: #000;
+  background: #fff; // pad with white where the image doesn't fill the card
 }
 .research-highlights .rh-media img {
   width: 100% !important;
   height: 100% !important;
   max-width: none;
-  object-fit: cover;
+  object-fit: contain; // show the whole image centered, no zoom/crop
   display: block;
   margin: 0;
   border-radius: 0 !important;
