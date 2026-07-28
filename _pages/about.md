@@ -57,38 +57,6 @@ latest_posts:
   })();
 </script>
 
-<!-- Typewriter effect for the header: the NAME stays static; only the subtitle types
-     out (55ms/char) and keeps a blinking blue caret at the end. Runs early to avoid a
-     flash of the fully-rendered subtitle. -->
-<script>
-  (function () {
-    var desc = document.querySelector(".post-header .desc");
-    if (!desc) return;
-    // Respect users who prefer reduced motion: leave the subtitle as-is, no animation.
-    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    var descText = desc.textContent.replace(/\s+/g, " ").trim();
-    if (!descText) return;
-    desc.style.minHeight = desc.offsetHeight + "px"; // reserve space, avoid layout jump
-    desc.textContent = "";
-
-    var cursor = document.createElement("span");
-    cursor.className = "tw-cursor";
-    cursor.setAttribute("aria-hidden", "true");
-    cursor.textContent = "|";
-    desc.appendChild(cursor);
-
-    var i = 0;
-    (function step() {
-      if (i < descText.length) {
-        cursor.insertAdjacentText("beforebegin", descText.charAt(i++));
-        setTimeout(step, 55);
-      }
-      // leave the blinking caret at the end
-    })();
-  })();
-</script>
-
 I am a first-year Ph.D. student in [Biomedical Engineering](https://bme.duke.edu/) at Duke University, advised by [Prof. Timothy W. Dunn](https://www.tdunnlab.org/). My research focuses on AI/ML methods and foundation models.
 
 Before Duke, I completed a concurrent B.S./B.Eng. in Electrical Engineering at the University of Cincinnati and Chongqing University. During my undergraduate study, I was fortunate to conduct research at:

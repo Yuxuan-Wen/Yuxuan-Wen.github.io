@@ -251,20 +251,6 @@ html[data-theme-setting="light"] {
   letter-spacing: 0.01em;
 }
 
-// Blinking caret for the typewriter effect on the name + subtitle (see _pages/about.md).
-.post-header .tw-cursor {
-  display: inline-block;
-  margin-left: 0.02em;
-  font-weight: 400;
-  color: var(--global-theme-color);
-  animation: tw-blink 1s steps(1, end) infinite;
-}
-@keyframes tw-blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 // Profile name heading on the about page: keep both "Yuxuan" and "Wen" at the
 // same weight (matching the EB Garamond medium above) instead of first-name-bold.
 .post-header .post-title .font-weight-bold {
