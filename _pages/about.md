@@ -113,7 +113,7 @@ Feel free to reach me by [email](mailto:yuxuan.wen@duke.edu) or [LinkedIn](https
 {% bibliography %}
 </div>
 
-<!-- Visitor world map (MapMyVisitors). Only records visits on the live site. -->
-<div class="mapmyvisitors-widget" style="text-align: center; margin-top: 2rem;">
-  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=000000&w=300&t=tt&d=3rN61ber80qeVaChuc-YM5G0mQqSQPErALEyw17o7ag&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080"></script>
+<!-- Visitor hit counter (hitscounter.dev) — a plain image badge, no JS/eval. -->
+<div class="visitor-badge" style="text-align: center; margin-top: 2rem;">
+  <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fyuxuan-wen.github.io%2F&label=Clicks&icon=alt&color=%23198754&message=&style=plastic&tz=EST" alt="Visitor clicks" loading="lazy" />
 </div>
